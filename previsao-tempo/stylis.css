@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundu-site-tempo.jpg);
+    background-size: cover;
+    /* Torna o fundo responsivo */
+    background-position: center;
+    /* Centraliza o fundo */
+    margin: 0;
+    /* Remove margens para evitar espaços em branco */
+
+}
+
+.texto {
+    position: absolute;
+    top: 30px;
+    left: 460px;
+    transform: rotate(-15deg);
+    font-size: 15px;
+    justify-content: center;
+}
+
+.texto_tempo {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+
+}
+
+span {
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    margin-left: 40px;
+}
+
+.nuvem {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    height: 120px;
+
+
+}
+
+
+.caixa-maior {
+    background: #000000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+}
+
+.input_cidade {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #363333;
+    color: #ffffff;
+}
+
+.botao_busca {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+    float: right;
+
+
+}
+
+.img_busca {
+    width: 20px;
+}
+
+.caixa_media {
+    margin-top: 30px;
+}
+
+.cidade {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 300px;
+}
+
+.temp {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.caixa_menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto_previsao {
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize;
+
+}
+
+.umidade {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 400px;
+        /* Reduz a largura para 90% em telas menores */
+        max-width: 380px;
+        /* Remove a largura máxima para permitir que a caixa se expanda conforme necessário */
+        background-image: url(novo_fundo_resposivo.jpg);
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao_busca {
+        float: right;
+
+    }
+
+    .texto {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        transform: rotate(-15deg);
+        font-size: 15px;
+        justify-content: center;
+    }
+    
+   
+    
+    .nuvem {
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        height: 120px;
+    
+    
+    }
+
+
+
+
+}

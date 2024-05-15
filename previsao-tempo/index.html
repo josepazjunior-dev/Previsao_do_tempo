@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylis.css">
+
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="texto">
+        <h1 class="texto_tempo">Previsão <br><span>do</span> <br> Tempo</h1>
+        <img src="logo_nuven.svg" alt="nuven" class="nuvem">
+    </div>
+    <div class="caixa-maior">
+        <input class="input_cidade" placeholder="Digite o nome da cidade">
+        <button class="botao_busca" onclick="cliqueiNoBotao()">
+            <img class="img_busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca">
+        </button>
+
+        <div class="caixa_media">
+
+            <h2 class="cidade">Olá Sejá Bem vindo</h2>
+            <p class="temp">Digite sua cidade acima</p>
+
+            <div class="caixa_menor">
+                <img class="img_previsao" src="https://openweathermap.org/img/wn/04n.png" alt="nuven">
+                <p class="texto_previsao">-----</p>
+            </div>
+            <p class="umidade">Umidade do Ar: -----</p>
+        </div>
+
+
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
